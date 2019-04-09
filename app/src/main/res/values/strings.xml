@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Schedule</string>
+    <string name="title">Schedule</string>
+    <string name="create_contact">Create and look at the contact list</string>
+    <string name="contact_list">Contact list</string>
+    <string name="create">Create</string>
+    <string name="list">List</string>
+    <string-array name="Menu">
+        <item>@string/create</item>
+        <item>@string/list</item>
+    </string-array>
+    <string name="save">Save</string>
+    <string name="done">!Saved successful!</string>
+    <string name="error">!There are empty fields!</string>
+    <string name="user">User</string>
+    <string name="name">Name</string>
+    <string name="last_name">Lastname</string>
+    <string name="phone">Phone</string>
+    <string name="cellphone">Cellphone</string>
+    <string name="empty">!Empty list!</string>
+</resources>
