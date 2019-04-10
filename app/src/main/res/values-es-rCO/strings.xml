@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Agenda</string>
     <string name="title">Agenda</string>
-    <string name="create_contact">Crea y mira la lista de contactos</string>
+    <string name="create_contact">"Crear contacto "</string>
     <string name="contact_list">Lista de contactos</string>
     <string name="create">Crear</string>
     <string name="list">Lista</string>
@@ -15,4 +15,5 @@
     <string name="phone">Telefono</string>
     <string name="cellphone">Celular</string>
     <string name="empty">!La lista esta vacia!</string>
+    <string name="create_contact_title">Crea y mira la lista de contactos</string>
 </resources>
