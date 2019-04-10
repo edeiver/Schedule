@@ -45,7 +45,7 @@ public class CreateContact extends AppCompatActivity implements View.OnClickList
         BtnFirebase.setOnClickListener(this);
         recyclerView=(RecyclerView)findViewById(R.id.RecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        getData();
+       // getData();
     }
     private void LoadFirebaseData(String nameOn, String lastNameOn, String phoneOn, String cellphoneOn) {
         Map<String, Object> UserData = new HashMap<>();
@@ -73,46 +73,6 @@ public class CreateContact extends AppCompatActivity implements View.OnClickList
             }
         }
     }
-
-    private void DataRequestFirebase() {
-        RootReference.child("User").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for(final DataSnapshot snapshot : dataSnapshot.getChildren()){
-                    RootReference.child("User").child(snapshot.getKey()).addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            if (dataSnapshot.exists()){}
-                            User user= snapshot.getValue(User.class);
-                            String name = user.getName();
-                            String lastname = user.getLastName();
-                            String cellPhone = user.getCellphone();
-                            String phone = user.getPhone();
-                            /*Log.e("Name ",""+name);
-                            Log.e("LastName ",""+lastname);
-                            Log.e("Cellphone:",""+cellPhone);
-                            Log.e("Phone ",""+phone);
-                            */Log.e("Data",""+snapshot.getValue());
-
-                            //displayData();
-                        }
-
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                        }
-                    });
-
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
-    }
-
 
     private void getData(){
         RootReference.child("User").addValueEventListener(new ValueEventListener() {

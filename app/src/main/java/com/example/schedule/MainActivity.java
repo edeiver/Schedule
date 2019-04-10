@@ -9,7 +9,7 @@ import com.google.firebase.database.DatabaseReference;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 DatabaseReference RootReference;
-Button BtnCreate;
+Button BtnCreate,BtnList;
 private Intent In;
 private Resources Resourses;
 
@@ -19,6 +19,8 @@ private Resources Resourses;
         setContentView(R.layout.activity_main);
         BtnCreate = findViewById(R.id.BtnCreate);
         BtnCreate.setOnClickListener(this);
+        BtnList = findViewById(R.id.BtnList);
+        BtnList.setOnClickListener(this);
 
     }
     @Override
@@ -28,6 +30,10 @@ private Resources Resourses;
             In = new Intent(MainActivity.this, CreateContact.class);
             startActivity(In);
             break;
+
+        case R.id.BtnList:
+            In = new Intent(MainActivity.this, DataRequest.class);
+            startActivity(In);
      }
     }
 }

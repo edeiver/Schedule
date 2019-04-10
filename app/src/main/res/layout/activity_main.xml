@@ -42,6 +42,14 @@
         android:text="@string/create_contact"
         android:textColor="#ffff" />
 
+    <Button
+        android:id="@+id/BtnList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/custom_btncreate"
+        android:text="@string/contact_list"
+        android:textColor="#ffff" />
     <!--
     <ListView
     android:id="@+id/Options"
