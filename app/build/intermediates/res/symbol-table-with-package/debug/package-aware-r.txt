@@ -709,7 +709,6 @@ id BtnSave
 id CTRL
 id FUNCTION
 id META
-id RecyclerView
 id RecyclerView2
 id SHIFT
 id SYM
@@ -865,7 +864,6 @@ id textSpacerNoTitle
 id textView
 id textView3
 id textView4
-id textView5
 id time
 id title
 id titleDividerNoCustom
@@ -1001,6 +999,7 @@ string common_signin_button_text_long
 string contact_list
 string create
 string create_contact
+string create_contact_title
 string done
 string empty
 string error

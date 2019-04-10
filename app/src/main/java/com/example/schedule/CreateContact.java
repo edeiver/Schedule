@@ -43,8 +43,8 @@ public class CreateContact extends AppCompatActivity implements View.OnClickList
         Cellphone=findViewById(R.id.TxtCellphone);
         Phone=findViewById(R.id.TxtPhone);
         BtnFirebase.setOnClickListener(this);
-        recyclerView=(RecyclerView)findViewById(R.id.RecyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+       // recyclerView=(RecyclerView)findViewById(R.id.RecyclerView);
+        //recyclerView.setLayoutManager(new LinearLayoutManager(this));
        // getData();
     }
     private void LoadFirebaseData(String nameOn, String lastNameOn, String phoneOn, String cellphoneOn) {
