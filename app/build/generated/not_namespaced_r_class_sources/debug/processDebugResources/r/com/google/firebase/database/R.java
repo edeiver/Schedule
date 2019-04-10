@@ -155,9 +155,9 @@ public final class R {
         public static final int status_bar_latest_event_content = 0x7f080094;
         public static final int text = 0x7f08009b;
         public static final int text2 = 0x7f08009c;
-        public static final int time = 0x7f0800a2;
-        public static final int title = 0x7f0800a3;
-        public static final int wide = 0x7f0800ab;
+        public static final int time = 0x7f0800a7;
+        public static final int title = 0x7f0800a8;
+        public static final int wide = 0x7f0800b0;
     }
     public static final class integer {
         private integer() {}
